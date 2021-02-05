@@ -1,2 +1,2 @@
-# crypto-watcher
+# Crypto Watcher
 Monitoring cryptocurrency exchanges
