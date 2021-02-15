@@ -55,7 +55,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: magnet72/crypto-watcher:latest
+          tags: ${{ secrets.DOCKER_HUB_USERNAME }}/crypto-watcher:latest
 
       # Output of what was pushed
       - name: Image digest
