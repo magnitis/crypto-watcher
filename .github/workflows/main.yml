@@ -54,6 +54,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           builder: ${{ steps.buildx.outputs.name }}
+          cache: enabled
           push: true
           tags: ${{ secrets.DOCKER_HUB_USERNAME }}/crypto-watcher:latest
           cache-from: type=local,src=/tmp/.buildx-cache
