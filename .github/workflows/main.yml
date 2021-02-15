@@ -55,7 +55,7 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: magnitis/crypto-watcher-ci:latest
+          tags: magnitis/crypto-watcher:latest
 
       # Output of what was pushed
       - name: Image digest
