@@ -63,6 +63,6 @@ jobs:
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache
 
-      # Output of the image digest to see what was pushed
+      # Echo image digest to see what was pushed
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
